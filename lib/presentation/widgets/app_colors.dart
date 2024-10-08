@@ -27,6 +27,9 @@ class AppColor {
   static const Color navigationBarIconColor = Color.fromRGBO(191, 192, 197, 1);
   static const Color navigationBoxColor1 = Color.fromRGBO(8, 173, 75, 1);
   static const Color detailGradientColor = Color.fromRGBO(0, 0, 0, 0.8);
+  static const Color containerBg = Color.fromRGBO(235, 252, 248, 1);
+  static const Color dateFieldBorderColor = Color.fromRGBO(232, 232, 232, 1);
+
 
 
 

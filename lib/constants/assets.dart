@@ -23,5 +23,11 @@ class Assets {
   static const String image2 = 'assets/images/image2.png';
   static const String image3 = 'assets/images/image3.png';
   static const String image4 = 'assets/images/image4.png';
+  static const String person1 = 'assets/images/person1.png';
+  static const String fire = 'assets/images/fire.svg';
+  static const String fb = 'assets/images/facebook.svg';
+  static const String twitter = 'assets/images/twitter.svg';
+  static const String whatsapp = 'assets/images/whatsapp.svg';
+  static const String copy = 'assets/images/copy.svg';
 
 }

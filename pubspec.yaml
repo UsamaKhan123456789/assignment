@@ -78,14 +78,20 @@ flutter:
     - assets/images/category2.png
     - assets/images/category3.png
     - assets/images/category4.png
+    - assets/images/copy.svg
     - assets/images/detailImage.png
     - assets/images/dropArrow.svg
+    - assets/images/facebook.svg
     - assets/images/filter.svg
+    - assets/images/fire.svg
     - assets/images/image1.png
     - assets/images/image2.png
     - assets/images/image3.png
     - assets/images/image4.png
+    - assets/images/person1.png
     - assets/images/restaurant.png
+    - assets/images/twitter.svg
+    - assets/images/whatsapp.svg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
