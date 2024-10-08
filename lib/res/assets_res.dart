@@ -8,6 +8,7 @@ class AssetsRes {
 
   static const String PLUGIN_NAME = 'assignment';
   static const String PLUGIN_VERSION = '1.0.0+1';
+  static const String BACKARROW = 'assets/images/backArrow.svg';
   static const String CARD1 = 'assets/images/card1.png';
   static const String CARD2 = 'assets/images/card2.png';
   static const String CARD3 = 'assets/images/card3.png';
@@ -19,7 +20,12 @@ class AssetsRes {
   static const String CATEGORY2 = 'assets/images/category2.png';
   static const String CATEGORY3 = 'assets/images/category3.png';
   static const String CATEGORY4 = 'assets/images/category4.png';
+  static const String DETAILIMAGE = 'assets/images/detailImage.png';
   static const String DROPARROW = 'assets/images/dropArrow.svg';
   static const String FILTER = 'assets/images/filter.svg';
+  static const String IMAGE1 = 'assets/images/image1.png';
+  static const String IMAGE2 = 'assets/images/image2.png';
+  static const String IMAGE3 = 'assets/images/image3.png';
+  static const String IMAGE4 = 'assets/images/image4.png';
   static const String RESTAURANT = 'assets/images/restaurant.png';
 }

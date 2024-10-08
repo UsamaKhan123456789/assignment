@@ -1,4 +1,7 @@
+import 'package:assignment/presentation/home/screens/detail_screen/deals_detail_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -458,85 +461,90 @@ class _HomeScreenState extends State<HomeScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           // Restaurant Card
-                          Container(
-                            width: 265,
-                            height: 150,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Colors.white,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 1,
-                                  blurRadius: 5,
-                                  offset: const Offset(0, 3),
-                                ),
-                              ],
-                            ),
-                            child: Stack(
-                              children: [
-                                // Image in the card
-                                Container(
-                                  width: double.infinity,
-                                  height: 150,
-                                  decoration: const BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(10),
-                                      topRight: Radius.circular(10),
-                                    ),
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/images/restaurant.png'), // Replace with actual image
-                                      fit: BoxFit.cover,
-                                    ),
+                          GestureDetector(
+                            onTap: (){
+                              Get.to(() => const DealsDetailScreen());
+                            },
+                            child: Container(
+                              width: 265,
+                              height: 150,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                color: Colors.white,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 1,
+                                    blurRadius: 5,
+                                    offset: const Offset(0, 3),
                                   ),
-                                ),
-                                const Positioned(
-                                  top: 5,
-                                  right: 5,
-                                  child: Icon(
-                                    Icons.favorite_border,
-                                    color: Colors.white,
-                                    size: 24,
-                                  ),
-                                ),
-                                // Small container on top-left
-                                Positioned(
-                                  top: 5,
-                                  left: 5,
-                                  child: Container(
-                                    width: 77,
-                                    height: 30,
-                                    padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 10), // Adjusted padding
-                                    decoration: BoxDecoration(
-                                      color: Colors.black.withOpacity(0.5),
-                                      borderRadius: BorderRadius.circular(100),
-                                      border: Border.all(
-                                        color: Colors.white,
-                                        width: 1,
+                                ],
+                              ),
+                              child: Stack(
+                                children: [
+                                  // Image in the card
+                                  Container(
+                                    width: double.infinity,
+                                    height: 150,
+                                    decoration: const BoxDecoration(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(10),
+                                        topRight: Radius.circular(10),
+                                      ),
+                                      image: DecorationImage(
+                                        image: AssetImage('assets/images/restaurant.png'), // Replace with actual image
+                                        fit: BoxFit.cover,
                                       ),
                                     ),
-                                    child: const Center(
-                                      child: FittedBox( // FittedBox helps fit the text into the container
-                                        child: Text(
-                                          '30 % off',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 12, // Adjusted font size to fit within the container
-                                            fontWeight: FontWeight.bold, // Optionally make it bold for better readability
+                                  ),
+                                  const Positioned(
+                                    top: 5,
+                                    right: 5,
+                                    child: Icon(
+                                      Icons.favorite_border,
+                                      color: Colors.white,
+                                      size: 24,
+                                    ),
+                                  ),
+                                  // Small container on top-left
+                                  Positioned(
+                                    top: 5,
+                                    left: 5,
+                                    child: Container(
+                                      width: 77,
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 10), // Adjusted padding
+                                      decoration: BoxDecoration(
+                                        color: Colors.black.withOpacity(0.5),
+                                        borderRadius: BorderRadius.circular(100),
+                                        border: Border.all(
+                                          color: Colors.white,
+                                          width: 1,
+                                        ),
+                                      ),
+                                      child: const Center(
+                                        child: FittedBox( // FittedBox helps fit the text into the container
+                                          child: Text(
+                                            '30 % off',
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 12, // Adjusted font size to fit within the container
+                                              fontWeight: FontWeight.bold, // Optionally make it bold for better readability
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ),
                                   ),
-                                ),
 
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                           const SizedBox(height: 10),
                           // Restaurant Name
                           const Text(
-                            'The Great Restaurant',
+                            'Ristorante – Niko Romito',
                             style: TextStyle(
                               fontFamily: 'Outfit',
                               fontSize: 18,
@@ -545,7 +553,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           // Description text
                           const Text(
-                            'Delicious meals and dining experience',
+                            'Dine and enjoy a 20% Discount',
                             style: TextStyle(
                               fontFamily: 'Outfit',
                               fontSize: 14,
@@ -564,7 +572,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               Icon(Icons.location_on, size: 16, color: AppColor.hintColor),
                               SizedBox(width: 5),
                               Text(
-                                'Downtown, New York',
+                                'Ristorante L’Olivo at Al Mah... +5 more',
                                 style: TextStyle(
                                   fontFamily: 'Outfit',
                                   fontSize: 14,
@@ -576,11 +584,12 @@ class _HomeScreenState extends State<HomeScreen> {
                           const Row(
                             children: const [
                               Text(
-                                '4.9',
+                                '5.0',
                                 style: TextStyle(fontSize: 14),
                               ),
                               SizedBox(width: 5),
                               Icon(Icons.star, size: 12, color: AppColor.starColor),
+                              SizedBox(width: 5),
                               Text(
                                 '(7 reviews)',
                                 style: TextStyle(fontSize: 14),

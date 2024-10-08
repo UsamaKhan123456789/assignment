@@ -17,5 +17,11 @@ class Assets {
   static const String card4 = 'assets/images/card4.png';
   static const String card5 = 'assets/images/card5.png';
   static const String card6 = 'assets/images/card6.png';
+  static const String detailImage = 'assets/images/detailImage.png';
+  static const String backArrow = 'assets/images/backArrow.svg';
+  static const String image1 = 'assets/images/image1.png';
+  static const String image2 = 'assets/images/image2.png';
+  static const String image3 = 'assets/images/image3.png';
+  static const String image4 = 'assets/images/image4.png';
 
 }

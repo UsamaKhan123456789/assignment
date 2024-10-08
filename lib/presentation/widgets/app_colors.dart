@@ -26,6 +26,8 @@ class AppColor {
   static const Color cardBorderColor = Color.fromRGBO(219, 219, 219, 1);
   static const Color navigationBarIconColor = Color.fromRGBO(191, 192, 197, 1);
   static const Color navigationBoxColor1 = Color.fromRGBO(8, 173, 75, 1);
+  static const Color detailGradientColor = Color.fromRGBO(0, 0, 0, 0.8);
+
 
 
 
